@@ -45,6 +45,7 @@
       - { name: docker }
       - { name: docker-machine }
       - { name: docker-compose }
+      - { name: pwgen }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
