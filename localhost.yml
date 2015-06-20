@@ -46,6 +46,8 @@
       - { name: docker-machine }
       - { name: docker-compose }
       - { name: pwgen }
+      - { name: git-now }
+      - { name: nmap }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
