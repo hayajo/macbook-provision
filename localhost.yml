@@ -48,6 +48,7 @@
       - { name: pwgen }
       - { name: git-now }
       - { name: nmap }
+      - { name: reattach-to-user-namespace }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
