@@ -27,13 +27,13 @@ Mac App StoreからXcodeをインストール。
 
 ### Ansibleでアプリケーションをインストール
 
-    ansible-playbook -i hosts -vv localhost.yml
+    ansible-playbook -i localhost, -vv playbook.yml
 
 ## 更新
 
 アプリケーションの更新ではAnsibleのみ実行する。
 
-    ansible-playbook -i hosts -vv localhost.yml
+    ansible-playbook -i localhost, -vv playbook.yml
 
 ## ghq
 
