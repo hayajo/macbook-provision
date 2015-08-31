@@ -49,6 +49,7 @@
       - { name: git-now }
       - { name: nmap }
       - { name: reattach-to-user-namespace }
+      - { name: graphviz }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
