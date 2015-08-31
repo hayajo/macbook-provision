@@ -29,7 +29,7 @@
       - { name: tree }
       - { name: nkf }
       - { name: jq }
-      - { name: go }
+      - { name: go, install_options: cross-compile-common }
       - { name: direnv }
       - { name: rbenv }
       - { name: plenv }
