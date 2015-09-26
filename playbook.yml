@@ -15,7 +15,7 @@
       - { name: python }
       - { name: coreutils }
       - { name: git }
-      - { name: zsh, install_options: disable-etcdir }
+      - { name: zsh, install_options: without-etcdir }
       - { name: wget }
       - { name: curl }
       - { name: lynx }
