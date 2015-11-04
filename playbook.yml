@@ -42,9 +42,6 @@
       - { name: packer }
       - { name: socat }
       - { name: tmux }
-      - { name: docker }
-      - { name: docker-machine }
-      - { name: docker-compose, install_options: without-boot2docker }
       - { name: pwgen }
       - { name: git-now }
       - { name: nmap }
