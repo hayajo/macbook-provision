@@ -48,6 +48,7 @@
       - { name: reattach-to-user-namespace }
       - { name: graphviz }
       - { name: awscli }
+      - { name: nvm }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
