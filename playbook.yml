@@ -49,6 +49,7 @@
       - { name: graphviz }
       - { name: awscli }
       - { name: nvm }
+      - { name: libiconv }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
