@@ -11,6 +11,7 @@
       - { name: vim, install_options: with-lua }
       - { name: readline }
       - { name: openssl }
+      - { name: openssh }
       - { name: openssl, state: linked, install_options: force }
       - { name: python }
       - { name: coreutils }
