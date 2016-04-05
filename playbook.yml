@@ -7,50 +7,50 @@
       - homebrew/binary
       - homebrew/dupes
     homebrew_packages:
-      - { name: lua }
-      - { name: vim, install_options: with-lua }
-      - { name: readline }
-      - { name: openssl }
-      - { name: openssh }
-      - { name: openssl, state: linked, install_options: force }
-      - { name: python }
-      - { name: coreutils }
-      - { name: git }
-      - { name: zsh, install_options: without-etcdir }
-      - { name: wget }
-      - { name: curl }
-      - { name: lynx }
-      - { name: npm }
       - { name: ag }
-      - { name: cmake }
-      - { name: automake }
       - { name: autoconf }
-      - { name: pkg-config }
-      - { name: ctags }
-      - { name: tree }
-      - { name: nkf }
-      - { name: jq }
-      - { name: go, install_options: cross-compile-common }
-      - { name: direnv }
-      - { name: rbenv }
-      - { name: plenv }
-      - { name: pyenv }
-      - { name: ruby-build }
-      - { name: perl-build }
-      - { name: sqlite }
-      - { name: redis }
-      - { name: imagemagick }
-      - { name: packer }
-      - { name: socat }
-      - { name: tmux }
-      - { name: pwgen }
-      - { name: git-now }
-      - { name: nmap }
-      - { name: reattach-to-user-namespace }
-      - { name: graphviz }
+      - { name: automake }
       - { name: awscli }
-      - { name: nvm }
+      - { name: cmake }
+      - { name: coreutils }
+      - { name: ctags }
+      - { name: curl }
+      - { name: direnv }
+      - { name: git }
+      - { name: git-now }
+      - { name: go, install_options: cross-compile-common }
+      - { name: graphviz }
+      - { name: imagemagick }
+      - { name: jq }
       - { name: libiconv }
+      - { name: lua }
+      - { name: lynx }
+      - { name: nkf }
+      - { name: nmap }
+      - { name: npm }
+      - { name: nvm }
+      - { name: openssh }
+      - { name: openssl }
+      - { name: openssl, state: linked, install_options: force }
+      - { name: packer }
+      - { name: perl-build }
+      - { name: pkg-config }
+      - { name: plenv }
+      - { name: pwgen }
+      - { name: pyenv }
+      - { name: python }
+      - { name: rbenv }
+      - { name: readline }
+      - { name: reattach-to-user-namespace }
+      - { name: redis }
+      - { name: ruby-build }
+      - { name: socat }
+      - { name: sqlite }
+      - { name: tmux }
+      - { name: tree }
+      - { name: vim, install_options: with-lua }
+      - { name: wget }
+      - { name: zsh, install_options: without-etcdir }
   tasks:
     - name: homebrewのtapリポジトリを追加
       homebrew_tap: tap={{ item }} state=present
