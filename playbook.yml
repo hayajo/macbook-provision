@@ -12,6 +12,7 @@
       - { name: automake }
       - { name: awscli }
       - { name: cmake }
+      - { name: colordiff }
       - { name: coreutils }
       - { name: ctags }
       - { name: curl }
