@@ -1,49 +1,63 @@
-# Macの開発環境構築
+# Macbook Development Environment Provision
 
-## 初期構築
+## Preparation
 
-### Xcodeをインストール
+### Install Xcode Command Line Tools
 
-Mac App StoreからXcodeをインストール。
-
-その後、ターミナルから下記コマンドを実行してライセンスに同意し、Command Line Toolのインストールを行う。
+Before installing Xcode Command Lint Tools, we neeed to agree its license.
 
     sudo xcodebuild -license
     xcode-select --install
 
-### Homebrewをインストール
+### Install Homebrew
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
     brew update
 
-### Pythonをインストール
+### Install Python
 
     brew install python
+    pip install --upgrade pip setuptools
+    brew linkapps python
 
-### Ansibleをインストール
+Add python to the `PATH` environment variable, for example, for zsh add the following lines to `~/.zprofile`:
 
-    pip install ansible
+    PATH=/usr/local/bin:$PATH
+    export PATH
 
-### Ansibleでアプリケーションをインストール
+### Install Ansible
+
+    sudo pip install ansible
+
+## Apply the playbook to install everything
 
     ansible-playbook -i localhost, -vv playbook.yml
 
-## 更新
-
-アプリケーションの更新ではAnsibleのみ実行する。
+## Update
 
     ansible-playbook -i localhost, -vv playbook.yml
 
-## ghq
+## Install ghq
+
+[motemen/ghq: Remote repository management made easy](https://github.com/motemen/ghq)
 
     export GOPATH=$HOME
     export PATH=$GOPATH/bin:$PATH
     go get github.com/motemen/ghq
 
-## VirtualBox, Vagrant, Chrome
+## Install VirtualBox, Vagrant, Chrome, Docker
 
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * [Vagrant](https://www.vagrantup.com/downloads.html)
 * [Chrome](https://www.google.co.jp/chrome/browser/desktop/index.html)
+
+
+## Intall Docker
+
+[Docker Toolbox](https://www.docker.com/products/docker-toolbox) or [Docker for Mac](http://www.docker.com/products/docker#/mac)
+
+## Thanks
+
+* @soulmachine
 
