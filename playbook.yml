@@ -30,7 +30,7 @@
       - { name: nkf }
       - { name: nmap }
       - { name: npm }
-      - { name: nvm }
+      - { name: nodenv }
       - { name: openssh }
       - { name: openssl }
       - { name: openssl, state: linked, install_options: force }
