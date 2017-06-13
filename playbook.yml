@@ -29,7 +29,6 @@
       - { name: libiconv }
       - { name: lua }
       - { name: lynx }
-      - { name: netcat }
       - { name: nkf }
       - { name: nmap }
       - { name: npm }
