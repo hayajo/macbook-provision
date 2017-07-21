@@ -11,6 +11,7 @@
       - { name: autoconf }
       - { name: automake }
       - { name: awscli }
+      - { name: bash-completion }
       - { name: cmake }
       - { name: colordiff }
       - { name: coreutils }
