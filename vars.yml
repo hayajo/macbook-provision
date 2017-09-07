@@ -7,6 +7,7 @@ homebrew_packages:
   - { name: autoconf }
   - { name: automake }
   - { name: awscli }
+  - { name: awsebcli }
   - { name: bash-completion }
   - { name: cmake }
   - { name: colordiff }
