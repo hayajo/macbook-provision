@@ -53,6 +53,7 @@ homebrew_packages:
   - { name: socat }
   - { name: sqlite }
   - { name: tmux }
+  - { name: translate-shell }
   - { name: tree }
   - { name: vim, install_options: with-lua }
   - { name: watch }
