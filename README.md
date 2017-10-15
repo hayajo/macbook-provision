@@ -17,18 +17,12 @@ Before installing Xcode Command Lint Tools, we neeed to agree its license.
 
 ### Install Python
 
-    brew install python
-    pip install --upgrade pip setuptools
-    brew linkapps python
-
-Add python to the `PATH` environment variable, for example, for zsh add the following lines to `~/.zprofile`:
-
-    PATH=/usr/local/bin:$PATH
-    export PATH
+    brew install python3
+    pip3 install --upgrade pip setuptools
 
 ### Install Ansible
 
-    sudo pip install ansible
+    pip3 install ansible
 
 ## Apply the playbook to install everything
 
