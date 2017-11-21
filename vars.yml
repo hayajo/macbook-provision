@@ -28,8 +28,12 @@ homebrew_packages:
   - { name: imagemagick }
   - { name: jq }
   - { name: libiconv }
+  - { name: libpng }
+  - { name: libxml2 }
   - { name: lua }
   - { name: lynx }
+  - { name: mackerelio/mackerel-agent/mkr }
+  - { name: memcached }
   - { name: nkf }
   - { name: nmap }
   - { name: npm }
@@ -42,6 +46,7 @@ homebrew_packages:
   - { name: pkg-config }
   - { name: plenv }
   - { name: pup }
+  - { name: pv }
   - { name: pwgen }
   - { name: pyenv }
   - { name: python }
@@ -50,6 +55,7 @@ homebrew_packages:
   - { name: reattach-to-user-namespace }
   - { name: redis }
   - { name: ruby-build }
+  - { name: shared-mime-info }
   - { name: socat }
   - { name: sqlite }
   - { name: tmux }
