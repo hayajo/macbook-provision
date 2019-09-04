@@ -4,7 +4,7 @@
 
 ### Install Xcode Command Line Tools
 
-Before installing Xcode Command Lint Tools, we neeed to agree its license.
+Before installing Xcode Command Line Tools, we neeed to agree its license.
 
     sudo xcodebuild -license
     xcode-select --install
